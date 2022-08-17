@@ -1,0 +1,537 @@
+* {
+
+    padding: 0;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+}
+
+header {
+    background-color: rgb(97, 96, 96);
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "info nav";
+
+
+}
+
+#info {
+    display: flex;
+    align-content: flex-start;
+    grid-area: info;
+
+}
+
+#listaUno {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    grid-area: nav;
+
+
+
+}
+
+#listaUnoContenido {
+
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#listaBotones {
+    text-decoration: none;
+    margin: 10px;
+    list-style: none;
+    text-align: center;
+    margin: .5em;
+    padding: .5em;
+    font-weight: 600;
+    background-color: rgb(1, 1, 10);
+    justify-content: center;
+    align-items: center;
+}
+
+#listaBotones a {
+    text-decoration: none;
+    color: white;
+}
+
+#logo {
+    height: 40%;
+    width: 40%;
+    display: flex;
+    margin-top: 3px;
+    border: 10px solid orange;
+
+
+
+}
+
+
+.container1 {
+    margin-top: 5px;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 400;
+    background-color: black;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+}
+
+.listaPrincipal {
+    width: 100%;
+    margin: 10px;
+    height: 15vh;
+    display: flex;
+    list-style: none;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+
+
+
+}
+
+.listaReparaciones {
+    margin: .5em;
+    font-weight: 400;
+    font-family: 'Mochiy Pop One', sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+    background-color: rgb(252, 135, 2);
+
+
+}
+
+.servicios {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.garantia {
+    width: 200px;
+    background-color: blanchedalmond;
+    display: flex;
+    height: 20vh;
+    margin: 10px;
+    padding: .5em;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+
+.Contenido {
+    background-color: aqua;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 10vh;
+    margin-right: 80px;
+
+
+}
+
+
+.presupuesto {
+
+    width: 200px;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    margin: 10px;
+    padding: .5em;
+    flex-direction: column;
+
+
+}
+
+.titulo1 {
+    color: blue;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+
+
+.titulos {
+    font-family: 'Mochiy Pop One', sans-serif;
+    background-color: rgb(243, 165, 49);
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+
+.bordesPrincipal {
+    border: 10px solid black;
+}
+
+
+
+#imagenPrincipal {
+    background-color: aqua;
+    height: 20vh;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+
+
+.parrafo {
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: solid;
+
+
+}
+
+.parrafos2 {
+
+    font-size: 1cm;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: coral;
+    text-align: center;
+}
+
+
+#Quereparamoslista {
+
+    display: grid;
+    grid-template-columns: 1fr .5fr 1fr;
+    grid-template-areas: "lis1 imagencentral lis2";
+
+}
+
+#lis1 {
+    grid-area: lis1;
+}
+
+#imagencentral {
+    grid-area: imagencentral;
+}
+
+#lis2 {
+    grid-area: lis2;
+}
+
+.Quereparamos {
+    display: flex;
+    list-style: none;
+    background-color: orange;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+#footer {
+    height: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "redes porqueelegirnos infocontacto";
+
+
+
+}
+
+
+
+#redes {
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: lightblue;
+    grid-area: redes;
+
+}
+
+#porqueElegirnos {
+
+    background-color: lightblue;
+    grid-area: porqueelegirnos;
+
+}
+
+#informacionContacto {
+
+    background-color: lightblue;
+    grid-area: infocontacto;
+    margin-left: 10px;
+
+}
+
+
+#grilla {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: .5fr 1fr .5fr;
+
+
+}
+
+
+
+#ubicacionTexto {
+    font-size: xx-large;
+    font-family: fantasy;
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+
+#principal {
+    display: grid;
+    grid-template-rows: 1fr .5fr;
+
+}
+
+
+#queReparamos {
+    margin-top: 5px;
+
+
+}
+
+#ubicacion {
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#descripcionMapa {
+    display: flex;
+    background-color: aquamarine;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+
+#consultanos {
+
+    display: flex;
+    width: 1000px;
+    height: 50vh;
+    background-color: aqua;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+
+
+#fotolocal {
+    width: 100%;
+    height: 80%;
+    margin-top: 5px;
+}
+
+@media screen and (max-widht: 1024px) {}
+
+@media screen and (max-width: 500px) {
+
+    header {
+        width: 100%;
+        height: 250px;
+        background-color: rgb(97, 96, 96);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "info"
+            "logo"
+            "listauno";
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+
+    }
+
+
+
+    #info {
+        display: flex;
+        align-content: center;
+        background-color: coral;
+        justify-content: center;
+        grid-area: info;
+
+    }
+
+    #listaUno {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        grid-area: listauno;
+
+
+    }
+
+    #listaUnoContenido {
+
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #listaBotones {
+        text-decoration: none;
+        margin: 10px;
+        list-style: none;
+        text-align: center;
+        margin: .5em;
+        padding: .5em;
+        font-weight: 600;
+        background-color: rgb(1, 1, 10);
+        justify-content: center;
+        align-items: center;
+    }
+
+    #listaBotones a {
+        text-decoration: none;
+        color: white;
+    }
+
+
+
+    #logo {
+        height: 100px;
+        width: 400px;
+        display: flex;
+        margin-top: 3px;
+        border: 10px solid orange;
+        align-items: center;
+        justify-items: center;
+        grid-area: logo;
+    }
+
+
+
+    #ubicacion {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-rows: "descripcionMapa"
+            "fotoMapa";
+
+    }
+
+
+    #ubicacionTexto {
+
+        font-family: fantasy;
+        display: flex;
+        width: 400px;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+
+
+    #descripcionMapa {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        background: none;
+    }
+
+    #fotoMapa {
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+
+    }
+
+    #consultanos {
+
+        display: flex;
+        width: 1000px;
+        height: 50vh;
+        background-color: aqua;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 60px;
+
+    }
+
+    #fotolocal {
+        width: 100%;
+        height: 60%;
+        margin-bottom: 5px;
+    }
+
+    .container1 {
+        margin-top: 5px;
+        height: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 400;
+        background-color: black;
+        flex-direction: column;
+        margin-bottom: 50px;
+
+    }
+
+    .listaPrincipal {
+        width: 85%;
+        margin: 10px;
+        height: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+
+
+
+    }
+
+}
