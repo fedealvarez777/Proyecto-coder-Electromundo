@@ -9,8 +9,8 @@
 }
 
 header {
-    background-color:rgb(2,0,36); 
-    background-image:radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(224,139,40,1) 74%, rgba(0,212,255,1) 100%) ;
+    background-color: rgb(2, 0, 36);
+    background-image: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(224, 139, 40, 1) 74%, rgba(0, 212, 255, 1) 100%);
     width: 100%;
     height: 200px;
     display: grid;
@@ -61,7 +61,10 @@ header {
     background-color: rgb(1, 1, 10);
     justify-content: center;
     align-items: center;
+
 }
+
+
 
 #listaBotones a {
     text-decoration: none;
@@ -115,6 +118,14 @@ header {
     align-items: center;
     padding: .5em;
     background-color: rgb(252, 135, 2);
+    transition: background-color 10s;
+
+
+
+}
+
+.listaReparaciones {
+    background-color: orangered;
 
 
 }
@@ -185,6 +196,10 @@ header {
     margin-bottom: 10px;
 
 }
+
+
+
+
 
 
 .bordesPrincipal {
@@ -302,17 +317,35 @@ header {
 
 
 #ubicacionTexto {
-    font-size: xx-large;
+    font-size: x-small;
     font-family: fantasy;
     display: flex;
     width: 200px;
     align-items: center;
     justify-content: center;
     align-content: center;
-
+    animation-name: animacion1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
 
 }
 
+
+@keyframes animacion1 {
+    0% {
+        font-size: large;
+    }
+
+    45% {
+
+        font-size: x-large
+    }
+
+    100% {
+        font-size: xx-large;
+    }
+}
 
 #principal {
     display: grid;
@@ -341,9 +374,15 @@ header {
     align-items: center;
     align-content: center;
     justify-content: center;
+    transition: background-color 4s;
 
 }
 
+#descripcionMapa:hover {
+
+    background-color: orange;
+
+}
 
 #consultanos {
 
@@ -538,7 +577,7 @@ header {
 }
 
 
-.iconos{
+.iconos {
 
     display: flex;
     width: 25px;
